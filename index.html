@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none';">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="notebook-pattern">
+      <header>
+        <section id="header-top">
+          <a id="about" href="#" title="About">
+            <img class="logo" src="icons/about.png" alt="about">
+          </a>
+
+          <a id="projects" href="#section-projects" title="Projects">
+            <img class="logo" src="icons/project.png" alt="projects">
+          </a>
+
+          <a id="resume" href="#section-resume" title="Resume">
+            <img class="logo" src="icons/resume.png" alt="resume">
+          </a>
+
+          <a id="connect" href="#" title="Connect">
+            <img class="logo" src="icons/connect.png" alt="connect">
+          </a>
+        </section>
+      </header>
+      <section id="section-projects">
+        <h1>PROJECTS</h1>
+        <article id="project-1">
+          <h2>Moviepedia — Movie Search Web App</h2>
+          <h4><span class="highlight">Tech Stack: HTML, CSS, JavaScript, OMDb API</span></h3>
+          <p>
+            Built a responsive single-page app to fetch and display movie data
+            via the OMDb API, with modular JavaScript for clean code and error
+            handling.
+          </p>
+          <p>
+            Implemented light/dark mode toggle using CSS variables and enhanced
+            accessibility with ARIA tags and mobile-first design
+          </p>
+          <p>
+            Added persistent search history using localStorage to improve user
+            experience across sessions.
+          </p>
+          <iframe
+            id="moviepedia-embeded"
+            src="movie-pedia/moviepedia.html"
+          ></iframe>
+        </article>
+        <br>
+        <article id="project-2">
+          <h2>Data-Driven Energy Prediction for Electric Buses </h2>
+          <h4> <span class="highlight">Tech Stack: HTML, CSS, JavaScript, Python, Machine Learning</span></h3>
+          <p>
+            Built a machine learning model using Python and Scikit-learn to predict energy consumption.
+          </p>
+          <p>
+            Achieved a 15% improvement in model accuracy through optimization techniques.
+          </p>
+          <p>
+            Applied regression and classification techniques; integrated findings for route efficiency.
+          </p>
+          <p>Delivered reports and visualizations using Pandas and Matplotlib, focusing on system performance
+and feasibility.</p>
+          <div class="flex-outputs">
+            <img class="project2-outputs" draggable="false" src="data-driven-energy-economy-prediction/home.png" alt="home">
+            <img class="project2-outputs" draggable="false" src="data-driven-energy-economy-prediction/login.png" alt="login">
+            <img class="project2-outputs" draggable="false" src="data-driven-energy-economy-prediction/output1.png" alt="output1">
+            <img class="project2-outputs" draggable="false" src="data-driven-energy-economy-prediction/output2.png" alt="output2">
+          </div>
+        </article>
+      </section>
+
+      <section id="section-resume">
+        <h1>RESUME</h1>
+        <a
+          href="source/RESUME-HarishPasumarthi.pdf"
+          download
+          class="download-btn"
+          target="_blank"
+          rel="noopener"
+        >
+        Download Resume <img class="download-icon" src="icons/download.png">
+        </a>
+        <iframe
+          id="resume-embeded"
+          src="source/RESUME-HarishPasumarthi.pdf"
+        ></iframe>
+      </section>
+
+    </div>
+  </body>
+</html>
